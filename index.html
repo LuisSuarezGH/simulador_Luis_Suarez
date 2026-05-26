@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Web - Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Simulador del Viaje de una Petición Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">1. Inicio (URL)</a></li>
+                <li><a href="solicitud.html">2. Solicitud HTTP</a></li>
+                <li><a href="servidor.html">3. Servidor</a></li>
+                <li><a href="respuesta.html">4. Respuesta HTML</a></li>
+                <li><a href="practica.html">5. Práctica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Paso 1: El usuario ingresa una URL</h2>
+            <p>Todo comienza cuando escribes una dirección (como <code>https://www.ejemplo.com</code>) en la barra del navegador. Este nombre amigable debe traducirse a una dirección IP numérica mediante el sistema DNS para saber exactamente a qué servidor dirigirse.</p>
+            
+            <figure>
+                <img src="imagenes/flujo.jpg" alt="Diagrama de introducción de URL y resolución DNS" width="500">
+                <figcaption>Esquema del usuario interactuando con el navegador.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Componentes de una URL</h3>
+            <ul>
+                <li><strong>Esquema:</strong> Indica el protocolo (HTTP o HTTPS).</li>
+                <li><strong>Host:</strong> El nombre del dominio (servidor de destino).</li>
+                <li><strong>Ruta:</strong> El recurso específico que se solicita dentro del servidor.</li>
+            </ul>
+
+            <table border="1">
+                <caption>Ejemplo de Anatomía de una URL</caption>
+                <thead>
+                    <tr>
+                        <th>Protocolo</th>
+                        <th>Dominio</th>
+                        <th>Recurso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>https://</td>
+                        <td>www.ies.com</td>
+                        <td>/index.html</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p> Tecnologias WEB, UTPL 2026</p>
+    </footer>
+</body>
+</html>

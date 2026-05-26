@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Paso 4 - Renderizado HTML5</title>
+</head>
+<body>
+    <header>
+        <h1>Procesamiento en el Cliente</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">1. Inicio (URL)</a></li>
+                <li><a href="solicitud.html">2. Solicitud HTTP</a></li>
+                <li><a href="servidor.html">3. Servidor</a></li>
+                <li><a href="respuesta.html">4. Respuesta HTML</a></li>
+                <li><a href="practica.html">5. Práctica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Paso 4: El Navegador interpreta el HTML</h2>
+            <p>El navegador recibe los paquetes de datos y empieza a leer el documento HTML de arriba hacia abajo. En esta fase construye el árbol DOM (Document Object Model) y renderiza visualmente los elementos en la pantalla del usuario.</p>
+            
+            <figure>
+                <img src="imagenes/renderizado.jpg" alt="Proceso de renderizado del navegador" width="500">
+                <figcaption>De código plano a interfaz gráfica.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Importancia de la Semántica en HTML5</h3>
+            <p>Las etiquetas semánticas le aportan significado estructural al documento, facilitando la accesibilidad y el posicionamiento SEO.</p>
+            
+            <ul>
+                <li><code>&lt;header&gt;</code>: Define la cabecera de la página o sección.</li>
+                <li><code>&lt;nav&gt;</code>: Contiene los bloques de enlaces de navegación.</li>
+                <li><code>&lt;main&gt;</code>: Define el contenido principal y único del documento.</li>
+                <li><code>&lt;article&gt;</code>: Representa una composición autónoma e independiente.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Muestra de Código Estructurado</h3>
+            <table border="1">
+                <caption>Estructura vs Propósito</caption>
+                <thead>
+                    <tr>
+                        <th>Bloque Código</th>
+                        <th>Uso Recomendado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>Agrupar temáticas lógicas dentro del main.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;footer&gt;</code></td>
+                        <td>Cierre con derechos de autor e información de contacto.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p> Tecnologias WEB, UTPL 2026</p>
+    </footer>
+</body>
+</html>
