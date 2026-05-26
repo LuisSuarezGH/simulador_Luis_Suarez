@@ -17,66 +17,64 @@
             </ul>
         </nav>
     </header>
-
-    <main>
+<main>
         <section>
-            <h2>Página 5: Simulación de Elementos Renderizados</h2>
-            <p>Esta página actúa como laboratorio. Contiene todos los requerimientos obligatorios solicitados en la rúbrica del proyecto integrados en un solo espacio semántico.</p>
+            <h2>1. El Texto y los Párrafos</h2>
+            <p>Cuando el motor del navegador lee la etiqueta <code>&lt;p&gt;</code>, procesa el texto plano y aplica los estilos tipográficos base. El texto se acomoda en bloques independientes según el flujo de lectura de arriba hacia abajo, convirtiéndose en el elemento principal de comunicación para el usuario final.</p>
+        </section>
+
+        <section>
+            <h2>2. Renderizado de Imágenes</h2>
+            <p>Al encontrar la etiqueta <code>&lt;img&gt;</code>, el navegador detiene momentáneamente el dibujado para buscar el archivo en la ruta local indicada. Si la ruta es correcta, reserva el espacio en píxeles configurado por los atributos de ancho y alto para incrustar el gráfico.</p>
             
             <figure>
-                <img src="img/logo.png" alt="Logotipo del Simulador Educativo" width="150">
-                <figcaption>Logotipo de prueba cargado con ruta relativa.</figcaption>
+                <img src="imagenes/renderizado.jpg" alt="Esquema del renderizado de componentes HTML" width="500">
+                <figcaption>Diagrama: De etiquetas de código a componentes visuales en pantalla.</figcaption>
             </figure>
         </section>
 
         <section>
-            <h3>Lista de Verificación Técnica</h3>
+            <h2>3. Construcción de Listas de Datos</h2>
+            <p>Las listas permiten agrupar ideas o elementos relacionados de forma ordenada. El navegador interpreta el contenedor primario y genera de manera automática sangrías y viñetas para cada fila secundaria, facilitando una lectura rápida y estructurada.</p>
+            
             <ul>
-                <li>Estructura semántica HTML5 validada.</li>
-                <li>Imágenes con atributo ALT configurado.</li>
-                <li>Formularios funcionales con sus respectivos labels.</li>
+                <li><strong>Lectura del código:</strong> El navegador detecta la apertura del contenedor.</li>
+                <li><strong>Asignación de viñetas:</strong> Se dibuja un marcador visual por cada fila encontrada.</li>
+                <li><strong>Cierre del bloque:</strong> Se rompe el flujo de lista para continuar con el siguiente elemento.</li>
             </ul>
         </section>
 
         <section>
-            <h3>Tabla de Datos de Control</h3>
+            <h2>4. Estructuración de Tablas Bidimensionales</h2>
+            <p>Las tablas organizan datos complejos cruzando filas y columnas. El navegador calcula dinámicamente el ancho de las celdas en base al texto interno, procesando primero las cabeceras principales y luego distribuyendo los registros en sus respectivas posiciones cuadriculadas.</p>
+            
             <table border="1">
-                <caption>Parámetros del Entorno de Pruebas</caption>
+                <caption>Análisis del Comportamiento de Renderizado</caption>
                 <thead>
                     <tr>
-                        <th>Módulo</th>
-                        <th>Estado de Validación</th>
-                        <th>Versión</th>
+                        <th>Elemento HTML</th>
+                        <th>Comportamiento Visual</th>
+                        <th>Impacto en el DOM</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Intérprete DOM</td>
-                        <td>Exitoso (W3C)</td>
-                        <td>HTML5 standard</td>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Bloque en línea (petición externa)</td>
+                        <td>Nodo de recurso independiente</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Bloque tabular estructurado</td>
+                        <td>Nodos jerárquicos padres e hijos</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <section>
-            <h3>Formulario de Simulación de Usuario</h3>
-            <form action="#" method="POST">
-                <fieldset>
-                    <legend>Prueba de Envío de Datos (Método POST)</legend>
-                    <p>
-                        <label for="nombre">Nombre del Estudiante:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </p>
-                    <p>
-                        <label for="comentario">¿Qué aprendiste del proceso?:</label>
-                        <textarea id="comentario" name="comentario" rows="3" required></textarea>
-                    </p>
-                    <p>
-                        <button type="submit">Simular Petición POST</button>
-                    </p>
-                </fieldset>
-            </form>
+            <h2>5. Formularios</h2>
+            <p>El formulario representa el puente de interactividad entre el cliente y el servidor. El navegador renderiza cuadros de texto nativos y botones interactivos que permiten capturar la información del usuario y enviarla de vuelta mediante una nueva petición HTTP.</p>
         </section>
     </main>
 <br>
@@ -90,5 +88,5 @@
         </a>
     </p>
     <p>Tecnologías WEB, UTPL 2026</p>
-</body>
+    </footer>
 </html>
