@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Paso 3 - Procesamiento en el Servidor Web</title>
+</head>
+<body>
+    <header>
+        <h1>El Núcleo del Backend: El Servidor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">1. Inicio: ¿Qué ocurre al ingresar una URL?</a></li>
+                <li><a href="solicitud.html">2. Solicitud HTTP</a></li>
+                <li><a href="servidor.html">3. Procesamiento en el Servidor Web</a></li>
+                <li><a href="respuesta.html">4. Respuesta y Renderizado HTML5</a></li>
+                <li><a href="practica.html">5. Ejemplo práctico: Mini página renderizada</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Paso 3: El Servidor procesa la Solicitud</h2>
+            <p>El servidor (Apache, Nginx, etc.) recibe la petición, comprueba si el recurso existe, y retorna un código de estado que informa al navegador sobre el resultado de la gestión.
+            <figure>
+                <img src="imagenes/flujo2.png" alt="Diagrama de Arquitectura Cliente-Servidor" width="500">
+                <figcaption>Flujo de ida y vuelta en la arquitectura Cliente-Servidor.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Códigos de Estado Comunes</h3>
+            <ul>
+                <li><strong>200 OK:</strong> La solicitud ha tenido éxito y el recurso se envía.</li>
+                <li><strong>404 Not Found:</strong> El servidor no pudo encontrar el recurso solicitado.</li>
+                <li><strong>500 Internal Server Error:</strong> El servidor encontró una condición inesperada.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Ejemplo de Encabezado de Respuesta</h3>
+            <table style="border: 1px solid black; border-collapse: collapse;">
+                <caption>Cabecera HTTP de Respuesta típica</caption>
+                <thead>
+                    <tr>
+                        <th>Línea de Cabecera</th>
+                        <th>Significado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>HTTP/1.1 200 OK</code></td>
+                        <td>Protocolo y estado exitoso.</td>
+                    </tr>
+                    <tr>
+                        <td><code>Content-Type: text/html; charset=UTF-8</code></td>
+                        <td>Formato de datos devuelto.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+<br>
+<hr>
+<br>
+    <footer>
+    <p>
+        <strong>Repositorio GitHub:</strong> 
+        <a href="https://github.com/LuisSuarezGH/simulador_Luis_Suarez" target="_blank">
+            <code>github.com/LuisSuarezGH/simulador_Luis_Suarez</code>
+        </a>
+    </p>
+    <p>Tecnologías WEB, UTPL 2026</p>
+    </footer>
+</body>
+</html>

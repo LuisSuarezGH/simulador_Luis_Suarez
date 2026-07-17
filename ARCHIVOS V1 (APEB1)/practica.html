@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Paso 5 - Ejemplo práctico: Mini página renderizada</title>
+</head>
+<body>
+    <header>
+        <h1>Demostración Práctica Completa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">1. Inicio: ¿Qué ocurre al ingresar una URL?</a></li>
+                <li><a href="solicitud.html">2. Solicitud HTTP</a></li>
+                <li><a href="servidor.html">3. Procesamiento en el Servidor Web</a></li>
+                <li><a href="respuesta.html">4. Respuesta y Renderizado HTML5</a></li>
+                <li><a href="practica.html">5. Ejemplo práctico: Mini página renderizada</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <section>
+            <h2>1. El Texto y los Párrafos</h2>
+            <p>Cuando el motor del navegador lee la etiqueta <code>&lt;p&gt;</code>, procesa el texto plano y aplica los estilos tipográficos base. El texto se acomoda en bloques independientes según el flujo de lectura de arriba hacia abajo, convirtiéndose en el elemento principal de comunicación para el usuario final.</p>
+        </section>
+
+        <section>
+            <h2>2. Renderizado de Imágenes</h2>
+            <p>Al encontrar la etiqueta <code>&lt;img&gt;</code>, el navegador detiene momentáneamente el dibujado para buscar el archivo en la ruta local indicada. Si la ruta es correcta, reserva el espacio en píxeles configurado por los atributos de ancho y alto para incrustar el gráfico.</p>
+            
+            <figure>
+                <img src="imagenes/renderizado.jpg" alt="Esquema del renderizado de componentes HTML" width="500">
+                <figcaption>Diagrama: De etiquetas de código a componentes visuales en pantalla.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>3. Construcción de Listas de Datos</h2>
+            <p>Las listas permiten agrupar ideas o elementos relacionados de forma ordenada. El navegador interpreta el contenedor primario y genera de manera automática sangrías y viñetas para cada fila secundaria, facilitando una lectura rápida y estructurada.</p>
+            
+            <ul>
+                <li><strong>Lectura del código:</strong> El navegador detecta la apertura del contenedor.</li>
+                <li><strong>Asignación de viñetas:</strong> Se dibuja un marcador visual por cada fila encontrada.</li>
+                <li><strong>Cierre del bloque:</strong> Se rompe el flujo de lista para continuar con el siguiente elemento.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Estructuración de Tablas Bidimensionales</h2>
+            <p>Las tablas organizan datos complejos cruzando filas y columnas. El navegador calcula dinámicamente el ancho de las celdas en base al texto interno, procesando primero las cabeceras principales y luego distribuyendo los registros en sus respectivas posiciones cuadriculadas.</p>
+            
+            <table style="border: 1px solid black; border-collapse: collapse;">
+                <caption>Análisis del Compotamiento de Renderizado</caption>
+                <thead>
+                    <tr>
+                        <th>Elemento HTML</th>
+                        <th>Comportamiento Visual</th>
+                        <th>Impacto en el DOM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Bloque en línea (petición externa)</td>
+                        <td>Nodo de recurso independiente</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Bloque tabular estructurado</td>
+                        <td>Nodos jerárquicos padres e hijos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>5. Formularios</h2>
+            <p>El formulario representa el puente de interactividad entre el cliente y el servidor. El navegador renderiza cuadros de texto nativos y botones interactivos que permiten capturar la información del usuario y enviarla de vuelta mediante una nueva petición HTTP.</p>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Laboratorio de Simulación de Datos</legend>
+                    <p>
+                        <label for="estudiante">Nombre del Evaluador:</label>
+                        <input type="text" id="estudiante" name="estudiante">
+                    </p>
+                    <p>
+                        <label for="opinion">Comentario sobre el Simulador:</label>
+                        <textarea id="opinion" name="opinion" rows="3"  ></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar Datos</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>6. Conclusión</h2>
+            <p>En resumen, el viaje de una petición web sigue una serie de pasos lógicos y consecutivos:</p>
+    
+            <ol>
+                <li>El usuario escribe una dirección web en el navegador.</li>
+                <li>El sistema DNS busca la dirección IP del servidor donde está la página.</li>
+                <li>El navegador envía una solicitud HTTP al servidor.</li>
+                <li>El servidor recibe la petición y busca el archivo o la información solicitada.</li>
+                <li>El servidor responde enviando los datos junto con un código de estado HTTP.</li>
+                <li>El navegador recibe la respuesta y muestra la página web al usuario.</li>
+    </ol>
+</section>
+    </main>
+<br>
+<hr>
+<br>
+    <footer>
+    <p>
+        <strong>Repositorio GitHub:</strong> 
+        <a href="https://github.com/LuisSuarezGH/simulador_Luis_Suarez" target="_blank">
+            <code>github.com/LuisSuarezGH/simulador_Luis_Suarez</code>
+        </a>
+    </p>
+    <p>Tecnologías WEB, UTPL 2026</p>
+    </footer>
+</html>

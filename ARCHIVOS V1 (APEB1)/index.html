@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio: ¿Qué ocurre al ingresar una URL?</title>
+</head>
+<body>
+    <header>
+        <h1>UNIVERSIDAD TECNICA PARTICULAR DE LOJA</h1>
+        <h1>[APEB1-30%] Actividad: Simulador Educativo del Funcionamiento de la Web</h1>
+        <h1>LUIS ENRIQUE SUAREZ LLERENA, PARALEO 100</h1>
+        <br>
+        <hr>
+        <br>
+        <h1>Simulador Educativo del Funcionamiento de la Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">1. Inicio: ¿Qué ocurre al ingresar una URL?</a></li>
+                <li><a href="solicitud.html">2. Solicitud HTTP</a></li>
+                <li><a href="servidor.html">3. Procesamiento en el Servidor Web</a></li>
+                <li><a href="respuesta.html">4. Respuesta y Renderizado HTML5</a></li>
+                <li><a href="practica.html">5. Ejemplo práctico: Mini página renderizada</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Paso 1: El usuario ingresa una URL</h2>
+            <p>La navegación web comienza cuando el usuario, mediante el uso de un dispositivo electronico, ingresa una dirección de dominio (como <code>https://www.ejemplo.com</code>) en la barra de navegación. Posteriormente, la infraestructura DNS interviene para realizar una resolución de nombres, transformando el dominio legible en su correspondiente dirección IP numérica, lo que permite establecer la conexión con el servidor destino.
+            <figure>
+                <img src="imagenes/flujo.jpg" alt="Diagrama de introducción de URL y resolución DNS" width="500">
+                <figcaption>Esquema del usuario interactuando con el navegador.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Componentes de una URL</h3>
+            <ul>
+                <li><strong>Esquema:</strong> Indica el protocolo (HTTP o HTTPS).</li>
+                <li><strong>Host:</strong> El nombre del dominio (servidor de destino).</li>
+                <li><strong>Ruta:</strong> El recurso específico que se solicita dentro del servidor.</li>
+            </ul>
+
+            <table style="border: 1px solid black; border-collapse: collapse;">
+                <caption>Ejemplo de Anatomía de una URL</caption>
+                <thead>
+                    <tr>
+                        <th>Protocolo</th>
+                        <th>Dominio</th>
+                        <th>Recurso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>https://</td>
+                        <td>www.iess.com</td>
+                        <td>/index.html</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+<br>
+<hr>
+<br>
+    <footer>
+    <p>
+        <strong>Repositorio GitHub:</strong> 
+        <a href="https://github.com/LuisSuarezGH/simulador_Luis_Suarez" target="_blank">
+            <code>github.com/LuisSuarezGH/simulador_Luis_Suarez</code>
+        </a>
+    </p>
+    <p>Tecnologías WEB, UTPL 2026</p>
+    </footer>
+</body>
+</html>
